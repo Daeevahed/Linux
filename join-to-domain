@@ -61,3 +61,6 @@ sudo systemctl start sssd
 
 sudo systemctl status sssd
 sudo realm permit --all
+sudo echo "ad_server = dl-dc01, km-dc01" >> /etc/sssd/sssd.conf
+sudo echo "ad_gpo_access_control = permissive" >> /etc/sssd/sssd.conf
+sudo systemctl start sssd
