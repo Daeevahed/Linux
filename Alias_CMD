@@ -1,0 +1,1 @@
+Cmnd_Alias SHOULD_NOT_RUN = /usr/bin/apt install python3-pip, /usr/bin/make *, /usr/bin/python *, /usr/bin/python2 *, /usr/bin/python3 *, /usr/bin/apt install python pip, /usr/sbin/python3 *, /usr/bin/apt install git, /usr/bin/passwd root
