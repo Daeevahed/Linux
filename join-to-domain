@@ -51,9 +51,8 @@ hostnamectl set-hostname "$hname".ernyka.com
 
 tput setaf 5;echo "please Enter user that have permission for join to domain then enther your password"
 read domainuser
-echo "Enter your passwd"
-read -s  passwds
-sudo echo $passwds | realm join -U $domainuser ernyka.com
+
+realm join -U $domainuser ernyka.com
 
 sudo pam-auth-update
 sudo systemctl stop sssd
